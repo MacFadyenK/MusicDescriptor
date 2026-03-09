@@ -1,12 +1,12 @@
 # Music Descriptor
 Music can be an important mood setter, a topic for discussion, and a point of connection between people. 
-Being able to translate music into textual descriptions is extremely helpful in cases where one cannot listen to audio. 
+Those who cannot listen to or are unable to talk about music are at a disadvantage, and may miss important context or fail at communicating musical ideas effectively, which is why being able to generate textual descriptions of music audio clips with AI is useful.
 Efficient generation of these textual descriptions can be used in movie captioning, song summaries, and more. 
 
-The goal of this project is to fine-tune a pre-trained audio transformer/LLM model to create textual descriptions from an audio clip.
+The goal of this project is to fine-tune a pre-trained audio LLM model to create natural language text descriptions of music from a music audio clip.
 
 ## Methods
-As LLMs and transformer models are powerful tools for text generation, this music descriptor will utilize a pre-trained audio LLM model to develop this product.
+As LLMs are powerful tools for text generation, this music descriptor will utilize a pre-trained audio LLM model to develop this product.
 The pre-trained Qwen2-Audio-7B model will be used as a basis for further fine-tuning for the music description task. This model can process audio inputs and output text [1].
 Fine tuning will be done through the HuggingFace library, using Parameter-Efficient Fine Tuning (PEFT) methods like Low-Rank Adaptation (LoRA) [2], as it reduces computational cost and has superior performance compared to full fine-tuning [3].
 
@@ -20,7 +20,7 @@ For model evaluation, a portion of the MusicCaps dataset will be set aside for t
 
 The model will be evaluated using cross-entropy loss metric, as well as other metrics common in music captioning such as BLEU, METEOR, ROGUE, and BERT-score [7-10].
 
-## Sources
+## References
 [1] Y. Chu et al., “Qwen2-Audio Technical Report,” Jul. 15, 2024, arXiv: arXiv:2407.10759. doi: 10.48550/arXiv.2407.10759.<br>
 [2] E. J. Hu et al., “LoRA: Low-Rank Adaptation of Large Language Models,” Oct. 16, 2021, arXiv: arXiv:2106.09685. doi: 10.48550/arXiv.2106.09685.<br>
 [3] V. B. Parthasarathy, A. Zafar, A. Khan, and A. Shahid, “The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An Exhaustive Review of Technologies, Research, Best Practices, Applied Research Challenges and Opportunities,” Oct. 30, 2024, arXiv: arXiv:2408.13296. doi: 10.48550/arXiv.2408.13296.<br>
