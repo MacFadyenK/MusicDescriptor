@@ -1,9 +1,8 @@
 # Music Descriptor
-Music can be an important mood setter, a topic for discussion, and a point of connection between people. 
-Those who cannot listen to or are unable to talk about music are at a disadvantage, and may miss important context or fail at communicating musical ideas effectively, which is why being able to generate textual descriptions of music audio clips with AI is useful.
-Efficient generation of these textual descriptions can be used in movie captioning, song summaries, and more. 
+Music is prevalent in many areas of human experience. It can be a mood setter, tell a story, or act as a point of connection between people.  Textual descriptions of music can help those who are hard of hearing or otherwise unable to comprehend auditory stimulus. Making use of a pre-trained general LALM, Qwen2-Audio-7B, parameter efficient fine-tuning (PEFT) was applied using a database of musical audio clips paired with textual descriptions. The success of fine tuning was determined by using evaluation metrics for text similarity between the generated description and the ground truth, as well as qualitative analysis of the descriptions. To demonstrate the description capabilities of the model, an interface was made which will generate a textual description of the audio file uploaded using both the original and fine-tuned model.
 
-The goal of this project is to fine-tune a pre-trained audio LLM model to create natural language text descriptions of music from a music audio clip.
+## How to Run
+To run the interface, open the MusicDescriptor_interface file in Google Colab. Make sure to connect to a GPU and hit Run All to download the required packages and model. WARNING: This demo requires at least 13G GPU memory due to the comparison between the original and tuned model. Make sure the GPU connection will be able to support this high usage. Once downloaded, the Gradio interface will open at the bottom of the page, use the interface directly in Google Colab or click on the provided link to open a separate page of the interface. When done, make sure to Disconnect from the GPU.
 
 ## Methods
 As LLMs are powerful tools for text generation, this music descriptor will utilize a pre-trained audio LLM model to develop this product.
