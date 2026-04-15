@@ -15,6 +15,17 @@ The model was fine-tuned on the MusicCaps dataset, from which 4204 music to text
 ## Evaluation
 The model was evaluated using the metrics BLEU, METEOR, ROUGE, and BERT-Score [7-10]. 
 
+## Presentation
+View the presentation of the material here: https://youtu.be/MYVX6KRN7Ao
+
+## Fine-Tuned Model
+View the fine tuned model and download it from here: https://huggingface.co/KaileyM/qwen2audio-lora-music-descriptor
+
+## Future Expansions
+- testing on a separate evaluation dataset
+- reduce memory usage of interface
+- description types: Emotional, Technical
+
 ## Tools/Requirements
 - datasets
 - accelerate
