@@ -22,9 +22,9 @@ View the presentation of the material here: https://youtu.be/MYVX6KRN7Ao
 View the fine tuned model and download it from here: https://huggingface.co/KaileyM/qwen2audio-lora-music-descriptor
 
 ## Future Expansions
-- testing on a separate evaluation dataset
-- reduce memory usage of interface
-- description types: Emotional, Technical
+- Testing on a separate evaluation dataset
+- Reduce memory usage of interface
+- Description types: Emotional, Technical
 
 ## Tools/Requirements
 - datasets
